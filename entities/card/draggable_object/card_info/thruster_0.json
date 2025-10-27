@@ -1,0 +1,7 @@
+{
+	"name": "thruster",
+	"suit": "thruster",
+	"front_image": "default.png",
+	"token_types": "card",
+	"token_values": "2"
+}

@@ -1,0 +1,7 @@
+{
+	"name": "reactor",
+	"suit": "reactor",
+	"front_image": "default.png",
+	"token_types": "action",
+	"token_values": "2"
+}

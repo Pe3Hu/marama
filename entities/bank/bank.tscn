@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp5rp81gcw5ww"]
+
+[ext_resource type="Script" uid="uid://dluga5536cqyu" path="res://entities/bank/bank.gd" id="1_ewxrm"]
+[ext_resource type="PackedScene" uid="uid://cfpfcij73h3rq" path="res://entities/bank/token/token.tscn" id="2_v5rbr"]
+
+[node name="Bank" type="PanelContainer"]
+script = ExtResource("1_ewxrm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Contracts" type="HBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="ReactorToken" parent="VBoxContainer/Contracts" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "reactor"
+
+[node name="ThrusterToken" parent="VBoxContainer/Contracts" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "thruster"
+
+[node name="MemberToken" parent="VBoxContainer/Contracts" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "member"
+
+[node name="DamageToken" parent="VBoxContainer/Contracts" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "damage"
+
+[node name="ShieldToken" parent="VBoxContainer/Contracts" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "shield"
+
+[node name="Tokens" type="HBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="HazardToken" parent="VBoxContainer/Tokens" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "hazard"
+
+[node name="ActionToken" parent="VBoxContainer/Tokens" instance=ExtResource("2_v5rbr")]
+unique_name_in_owner = true
+layout_mode = 2
+type = "action"

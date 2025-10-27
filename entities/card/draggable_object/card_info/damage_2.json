@@ -1,0 +1,7 @@
+{
+	"name": "damage_2",
+	"suit": "damage",
+	"front_image": "default.png",
+	"token_types": "damage",
+	"token_values": "2"
+}

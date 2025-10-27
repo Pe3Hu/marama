@@ -1,0 +1,7 @@
+{
+	"name": "shield",
+	"suit": "shield",
+	"front_image": "default.png",
+	"token_types": "block",
+	"token_values": "1"
+}

@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfpfcij73h3rq"]
+
+[ext_resource type="Script" uid="uid://dtcap16wwmquq" path="res://entities/bank/token/token.gd" id="1_dj60n"]
+[ext_resource type="Texture2D" uid="uid://dsqnwde12lj4f" path="res://entities/bank/token/images/member.png" id="2_0y6o1"]
+
+[node name="Token" type="PanelContainer"]
+offset_right = 24.0
+offset_bottom = 24.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+script = ExtResource("1_dj60n")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+mouse_filter = 1
+color = Color(1, 1, 0.13, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_0y6o1")
+
+[node name="ValueLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_trim_flags = 64
